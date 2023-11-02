@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "JustRideSDK",
-            targets: ["JustRideSDKTarget"]),
+            targets: ["JustRideSDKWrapper"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ale-gen/RNCryptor.git", exact: "5.1.0"),
@@ -21,7 +21,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "JustRideSDKTarget",
+            name: "JustRideSDKWrapper",
             dependencies: [
                 .target(
                     name: "JustRideSDK",
