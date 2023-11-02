@@ -24,8 +24,7 @@ let package = Package(
             name: "JustRideSDKWrapper",
             dependencies: [
                 .target(
-                    name: "JustRideSDK",
-                    condition: .when(platforms: [.iOS])
+                    name: "JustRideSDK"
                 ),
                 .product(name: "RNCryptor", package: "RNCryptor"),
                 .product(name: "MarqueeLabel", package: "MarqueeLabel"),
