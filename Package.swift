@@ -14,6 +14,9 @@ let package = Package(
             targets: ["JustRideSDKWrapper"]),
     ],
     dependencies: [
+        // we're linking to a fork of each of the libraries that the Justride SDK depends on
+        // because the Justride SDK needs the libraries to declare an explicit 'type';
+        // see the following Stack Overflow thread for details: https://stackoverflow.com/questions/77274207
         .package(url: "https://github.com/ale-gen/RNCryptor.git", exact: "5.1.0"),
         .package(url: "https://github.com/ale-gen/MarqueeLabel.git", exact: "4.3.2"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
