@@ -11,6 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "JustRideSDK",
+            type: .dynamic,
             targets: ["JustRideSDKWrapper"]),
     ],
     dependencies: [
