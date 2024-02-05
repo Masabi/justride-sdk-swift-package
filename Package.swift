@@ -20,7 +20,8 @@ let package = Package(
         .package(url: "https://github.com/ale-gen/RNCryptor.git", exact: "5.1.0"),
         .package(url: "https://github.com/ale-gen/MarqueeLabel.git", exact: "4.3.2"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
-        .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7")
+        .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7"),
+        .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", branch: "main")
     ],
     targets: [
         .target(
@@ -32,13 +33,16 @@ let package = Package(
                 .product(name: "RNCryptor", package: "RNCryptor"),
                 .product(name: "MarqueeLabel", package: "MarqueeLabel"),
                 .product(name: "ZXingObjC", package: "zxingify-objc"),
-                .product(name: "SSZipArchive", package: "ZipArchive")
+                .product(name: "SSZipArchive", package: "ZipArchive"),
+                .product(name: "JRE_Core", package: "j2objc-dynamic-frameworks-swift-package"),
+                .product(name: "JSON", package: "j2objc-dynamic-frameworks-swift-package"),
+                .product(name: "JSR305", package: "j2objc-dynamic-frameworks-swift-package")
             ],
             path: "JustRideSDKWrapper"
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/14.1.2/JustRideSDK.xcframework.zip",
-            checksum: "0fcfb606c9cd9db4e0b2bfe814f777905f1caf5555eefe305610b126ee03ceba")
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/14.2.0/JustRideSDK.xcframework.zip",
+            checksum: "4c94679aedb858bcd0a9073252a41e3233672301710cbdb99aeeabab9b05f9ca")
     ]
 )
