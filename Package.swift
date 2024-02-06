@@ -6,12 +6,13 @@ import PackageDescription
 let package = Package(
     name: "JustRideSDK",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         .library(
             name: "JustRideSDK",
-            targets: ["JustRideSDKWrapper"]),
+            targets: ["JustRideSDKWrapper"]
+        ),
     ],
     dependencies: [
         // we're linking to a fork of each of the libraries that the Justride SDK depends on
@@ -42,7 +43,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/14.2.0/JustRideSDK.xcframework.zip",
-            checksum: "4c94679aedb858bcd0a9073252a41e3233672301710cbdb99aeeabab9b05f9ca")
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.0.0/JustRideSDK.xcframework.zip",
+            checksum: "dd888020c7aa5b27c0fa6113e2571aecf1f7d13ed4f034605c190e7cdd971495"
+        )
     ]
 )
