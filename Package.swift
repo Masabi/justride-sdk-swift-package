@@ -28,9 +28,7 @@ let package = Package(
         .target(
             name: "JustRideSDKWrapper",
             dependencies: [
-                .target(
-                    name: "JustRideSDK"
-                ),
+                .target(name: "JustRideSDK"),
                 .product(name: "RNCryptor", package: "RNCryptor"),
                 .product(name: "MarqueeLabel", package: "MarqueeLabel"),
                 .product(name: "ZXingObjC", package: "zxingify-objc"),
@@ -39,12 +37,19 @@ let package = Package(
                 .product(name: "JSON", package: "j2objc-dynamic-frameworks-swift-package"),
                 .product(name: "JSR305", package: "j2objc-dynamic-frameworks-swift-package")
             ],
-            path: "JustRideSDKWrapper"
+            path: "JustRideSDKWrapper",
+            linkerSettings: [
+                .linkedFramework("CoreLocation"),
+                .linkedFramework("PassKit"),
+                .linkedFramework("Security"),
+                .linkedFramework("WebKit"),
+                .linkedFramework("UIKit")
+            ]
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.0.0/JustRideSDK.xcframework.zip",
-            checksum: "dd888020c7aa5b27c0fa6113e2571aecf1f7d13ed4f034605c190e7cdd971495"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.0.1-beta1/JustRideSDK.xcframework.zip",
+            checksum: "fdd0045d14382006a28641a1da12443cd188f52005d35ad006125286b273bbf7"
         )
     ]
 )
