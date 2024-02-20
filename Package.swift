@@ -40,6 +40,7 @@ let package = Package(
             path: "JustRideSDKWrapper",
             linkerSettings: [
                 .linkedFramework("CoreLocation"),
+                .linkedFramework("CryptoKit"),
                 .linkedFramework("PassKit"),
                 .linkedFramework("Security"),
                 .linkedFramework("WebKit"),
@@ -48,8 +49,9 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.0.2/JustRideSDK.xcframework.zip",
-            checksum: "fd559c9afb55f9d4b887d0c7384c80c738b107c513733f58644090d35bbd8895"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.0.2-test3/JustRideSDK.xcframework.zip",
+            checksum: "3f211b24cd6eae1d502b1406c2cbfd4253a91c37709cd951c7189d51a9575ecb"
         )
     ]
 )
+
