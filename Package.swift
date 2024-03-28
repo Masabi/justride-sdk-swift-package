@@ -22,7 +22,7 @@ let package = Package(
         .package(url: "https://github.com/ale-gen/MarqueeLabel.git", exact: "4.3.2"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
         .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7"),
-        .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", branch: "main")
+        .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26")
     ],
     targets: [
         .target(
@@ -49,8 +49,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.3.0/JustRideSDK.xcframework.zip",
-            checksum: "98e42584fd27b12f5d90bef337c4682b46e9efb064a49470277056a738093b63"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.3.1-beta1/JustRideSDK.xcframework.zip",
+            checksum: "51f5cdae0d8a800c6a78cba8597f64d63d0601b0a1ca0956b223917a9feed249"
         )
     ]
 )
