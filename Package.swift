@@ -49,8 +49,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/0.0.0-testing-new-artifactory/JustRideSDK.xcframework.zip",
-            checksum: "f547755c78b67f0c033bec96d19076bdf7c8a7fd94708c9e6b9857835c7a7cf2"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.4.1/JustRideSDK.xcframework.zip",
+            checksum: "290c01b1b7c88327e70ede6dec7c6afbc90fcb13ab1ba32d0c0b5127dc20768a"
         )
     ]
 )
