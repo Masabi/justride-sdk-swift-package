@@ -19,7 +19,7 @@ let package = Package(
         // because the Justride SDK needs the libraries to declare an explicit 'type';
         // see the following Stack Overflow thread for details: https://stackoverflow.com/questions/77274207
         .package(url: "https://github.com/ale-gen/RNCryptor.git", exact: "5.1.0"),
-        .package(url: "https://github.com/ale-gen/MarqueeLabel.git", exact: "4.3.3"),
+        .package(url: "https://github.com/ale-gen/MarqueeLabel.git", exact: "4.3.4"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
         .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7"),
         .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26")
