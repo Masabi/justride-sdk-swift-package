@@ -19,7 +19,7 @@ let package = Package(
         // because the Justride SDK needs the libraries to declare an explicit 'type';
         // see the following Stack Overflow thread for details: https://stackoverflow.com/questions/77274207
         .package(url: "https://github.com/ale-gen/RNCryptor.git", exact: "5.1.0"),
-        .package(url: "https://github.com/ale-gen/MarqueeLabel.git", exact: "4.3.2"),
+        .package(url: "https://github.com/Masabi/MarqueeLabel.git", exact: "4.5.1"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
         .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7"),
         .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26")
@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/15.8.0/JustRideSDK.xcframework.zip",
-            checksum: "866496dbac08b63cba6e6dfc96e10611a5514af84f2c97ce48830a2946df1754"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/16.0.0-test1/JustRideSDK.xcframework.zip",
+            checksum: "ce2bf9e96b7c077a13137827181961304df4b8d914aafed439af28a1463358c1"
         )
     ]
 )
