@@ -18,7 +18,7 @@ let package = Package(
         // we're linking to a fork of each of the libraries that the Justride SDK depends on
         // because the Justride SDK needs the libraries to declare an explicit 'type';
         // see the following Stack Overflow thread for details: https://stackoverflow.com/questions/77274207
-        .package(url: "https://github.com/ale-gen/RNCryptor.git", exact: "5.1.0"),
+        .package(url: "https://github.com/Masabi/RNCryptor.git", exact: "5.1.0"),
         .package(url: "https://github.com/Masabi/MarqueeLabel.git", exact: "4.5.1"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
         .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7"),
@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/test_pipeline/JustRideSDK.xcframework.zip",
-            checksum: "7356b02cc7f2c6c70f516fa8785ddade271ea85bc89fe4135c879dc85ffb3539"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/16.4.0/JustRideSDK.xcframework.zip",
+            checksum: "db09fbb9f3ac7c5741d4f4800db57e68cd6d6975f349687f38378dfbf8caa8fc"
         )
     ]
 )
