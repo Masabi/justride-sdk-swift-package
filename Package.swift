@@ -21,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/Masabi/RNCryptor.git", exact: "5.1.0"),
         .package(url: "https://github.com/Masabi/MarqueeLabel.git", exact: "4.5.1"),
         .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
-        .package(url: "https://github.com/ale-gen/zxingify-objc.git", exact: "3.6.7"),
+        .package(url: "https://github.com/Masabi/zxingify-objc.git", revision: "f72b577"),
         .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26")
     ],
     targets: [
@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/17.5.0/JustRideSDK.xcframework.zip",
-            checksum: "5ced3b51efa8ceb22ed5b030ebeda42fef059b39778128f317fc7d2b816e4ec5"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/18.0.0/JustRideSDK.xcframework.zip",
+            checksum: "aadc494242659b2ade887fbfae6b720a1847509bb5909a714f275d12af37ea29"
         )
     ]
 )
