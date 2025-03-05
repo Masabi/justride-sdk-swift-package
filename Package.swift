@@ -20,8 +20,8 @@ let package = Package(
         // see the following Stack Overflow thread for details: https://stackoverflow.com/questions/77274207
         .package(url: "https://github.com/Masabi/RNCryptor.git", exact: "5.1.0"),
         .package(url: "https://github.com/Masabi/MarqueeLabel.git", exact: "4.5.1"),
-        .package(url: "https://github.com/ale-gen/ZipArchive.git", exact: "2.4.3"),
-        .package(url: "https://github.com/Masabi/zxingify-objc.git", revision: "f72b577"),
+        .package(url: "https://github.com/Masabi/ZIPFoundation.git", exact: "2025.2.21"),
+        .package(url: "https://github.com/Masabi/zxingify-objc.git", exact: "3.6.10"),
         .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26")
     ],
     targets: [
@@ -32,7 +32,7 @@ let package = Package(
                 .product(name: "RNCryptor", package: "RNCryptor"),
                 .product(name: "MarqueeLabel", package: "MarqueeLabel"),
                 .product(name: "ZXingObjC", package: "zxingify-objc"),
-                .product(name: "SSZipArchive", package: "ZipArchive"),
+                .product(name: "ZIPFoundation", package: "ZIPFoundation"),
                 .product(name: "JRE_Core", package: "j2objc-dynamic-frameworks-swift-package"),
                 .product(name: "JSON", package: "j2objc-dynamic-frameworks-swift-package"),
                 .product(name: "JSR305", package: "j2objc-dynamic-frameworks-swift-package")
@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/18.0.0/JustRideSDK.xcframework.zip",
-            checksum: "aadc494242659b2ade887fbfae6b720a1847509bb5909a714f275d12af37ea29"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/18.1.0-beta1/JustRideSDK.xcframework.zip",
+            checksum: "c2852c43766afbca13dd47d5900eed7f9c77e115c156efd0e574cb6042faf470"
         )
     ]
 )
