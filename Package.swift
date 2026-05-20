@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "JustRideSDK",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(
@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/21.8.0-beta2/JustRideSDK.xcframework.zip",
-            checksum: "76fa47542445a3af703b720a8f6a4fbd76521289b4089e8d32d5b24398d2c8d7"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/23.4.0/JustRideSDK.xcframework.zip",
+            checksum: "97317e548a96ac3a09b631e7987caed904776db272377c4cfa09171df5825fb9"
         )
     ]
 )
