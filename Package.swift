@@ -22,7 +22,7 @@ let package = Package(
         .package(url: "https://github.com/Masabi/MarqueeLabel.git", exact: "4.5.1"),
         .package(url: "https://github.com/Masabi/ZIPFoundation.git", exact: "2025.2.21"),
         .package(url: "https://github.com/Masabi/zxingify-objc.git", exact: "3.6.10"),
-        .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26")
+        .package(url: "https://github.com/Masabi/j2objc-dynamic-frameworks-swift-package.git", exact: "2023.09.26-j2objc-prefix")
     ],
     targets: [
         .target(
@@ -33,9 +33,9 @@ let package = Package(
                 .product(name: "MarqueeLabel", package: "MarqueeLabel"),
                 .product(name: "ZXingObjC", package: "zxingify-objc"),
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
-                .product(name: "JRE_Core", package: "j2objc-dynamic-frameworks-swift-package"),
-                .product(name: "JSON", package: "j2objc-dynamic-frameworks-swift-package"),
-                .product(name: "JSR305", package: "j2objc-dynamic-frameworks-swift-package")
+                .product(name: "J2ObjC_JRE_Core", package: "j2objc-dynamic-frameworks-swift-package"),
+                .product(name: "J2ObjC_JSON", package: "j2objc-dynamic-frameworks-swift-package"),
+                .product(name: "J2ObjC_JSR305", package: "j2objc-dynamic-frameworks-swift-package")
             ],
             path: "JustRideSDKWrapper",
             linkerSettings: [
@@ -50,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "JustRideSDK",
-            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/23.10.0/JustRideSDK.xcframework.zip",
-            checksum: "cab2c67b4e3e27e99d3c658751672aeb0626795530056e45f3760c6715306471"
+            url: "https://sdk-artifactory.justride.com/artifactory/ios-artifacts/23.11.0/JustRideSDK.xcframework.zip",
+            checksum: "06c87ab8be89981e7bf8ecbbb2a9c84c6a32c11328bcb2b0e9668b348a676454"
         )
     ]
 )
